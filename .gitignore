@@ -25,6 +25,10 @@ build-iPhoneSimulator/
 /vendor/bundle
 /lib/bundler/man/
 .rvmrc
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
 config/settings.local.yml
 config/settings/*.local.yml

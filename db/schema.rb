@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_08_07_052246) do
+ActiveRecord::Schema[7.0].define(version: 2024_08_08_092129) do
   create_table "authors", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "intro"
@@ -67,6 +67,15 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_07_052246) do
     t.index ["user_id"], name: "index_borrow_cards_on_user_id"
   end
 
+  create_table "carts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "episode_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["episode_id"], name: "index_carts_on_episode_id"
+    t.index ["user_id"], name: "index_carts_on_user_id"
+  end
+
   create_table "categories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.bigint "parent_id"
@@ -80,7 +89,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_07_052246) do
     t.string "name"
     t.integer "qty"
     t.string "intro"
-    t.string "content"
+    t.text "content"
     t.integer "compensation_fee"
     t.string "thumb"
     t.datetime "created_at", null: false
@@ -116,6 +125,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_07_052246) do
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
     t.string "email"
     t.string "password_digest"
     t.integer "role"
@@ -126,7 +136,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_07_052246) do
     t.boolean "activated"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "address"
   end
 
   add_foreign_key "book_authors", "authors"
@@ -137,6 +146,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_07_052246) do
   add_foreign_key "borrow_books", "borrow_cards"
   add_foreign_key "borrow_books", "episodes"
   add_foreign_key "borrow_cards", "users"
+  add_foreign_key "carts", "episodes"
+  add_foreign_key "carts", "users"
   add_foreign_key "categories", "categories", column: "parent_id"
   add_foreign_key "episodes", "books"
   add_foreign_key "favorites", "users"

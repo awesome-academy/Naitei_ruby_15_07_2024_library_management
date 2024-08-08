@@ -1,0 +1,227 @@
+[
+  {
+    "book_id": 1,
+    "name": null,
+    "qty": 25,
+    "intro": "The story begins with the mysterious arrival of a baby at the doorstep of the Dursleys.",
+    "content": "Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
+    "compensation_fee": 1000,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1659087827i/28757261.jpg"
+  },
+  {
+    "book_id": 2,
+    "name": null,
+    "qty": 10,
+    "intro": "Harry returns to Hogwarts for his second year.",
+    "content": "Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone ... Dobby's sinister predictions seem to be coming true.",
+    "compensation_fee": 1000,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1659087230i/28699254.jpg"
+  },
+  {
+    "book_id": 3,
+    "name": null,
+    "qty": 17,
+    "intro": "Harry's third year at Hogwarts is full of dark surprises.",
+    "content": "When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it's the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run - and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves... But perhaps most terrifying of all are the Dementors patrolling the school grounds, with their soul-sucking kiss...",
+    "compensation_fee": 1000,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1598823559i/28143415.jpg"
+  },
+  {
+    "book_id": 4,
+    "name": null,
+    "qty": 25,
+    "intro": "Harry competes in the Triwizard Tournament.",
+    "content": "The Triwizard Tournament is to be held at Hogwarts. Only wizards who are over seventeen are allowed to enter - but that doesn't stop Harry dreaming that he will win the competition. Then at Hallowe'en, when the Goblet of Fire makes its selection, Harry is amazed to find his name is one of those that the magical cup picks out. He will face death-defying tasks, dragons and Dark wizards, but with the help of his best friends, Ron and Hermione, he might just make it through - alive!",
+    "compensation_fee": 1000,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1659085624i/28137887.jpg"
+  },
+  {
+    "book_id": 5,
+    "name": null,
+    "qty": 37,
+    "intro": "The fight against Voldemort intensifies.",
+    "content": "Dark times have come to Hogwarts. After the Dementors' attack on his cousin Dudley, Harry Potter knows that Voldemort will stop at nothing to find him. There are many who deny the Dark Lord's return, but Harry is not alone: a secret order gathers at Grimmauld Place to fight against the Dark forces. Harry must allow Professor Snape to teach him how to protect himself from Voldemort's savage assaults on his mind. But they are growing stronger by the day and Harry is running out of time ...",
+    "compensation_fee": 1000,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1662567578i/28780969.jpg"
+  },
+  {
+    "book_id": 6,
+    "name": null,
+    "qty": 38,
+    "intro": "The secrets of Voldemort's past are revealed.",
+    "content": "When Dumbledore arrives at Privet Drive one summer night to collect Harry Potter, his wand hand is blackened and shrivelled, but he does not reveal why. Secrets and suspicion are spreading through the wizarding world, and Hogwarts itself is not safe. Harry is convinced that Malfoy bears the Dark Mark: there is a Death Eater amongst them. Harry will need powerful magic and true friends as he explores Voldemort's darkest secrets, and Dumbledore prepares him to face his destiny ...",
+    "compensation_fee": 1000,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1453889268i/28767931.jpg"
+  },
+  {
+    "book_id": 7,
+    "name": null,
+    "qty": 28,
+    "intro": "The final battle between Harry and Voldemort.",
+    "content": "As he climbs into the sidecar of Hagrid's motorbike and takes to the skies, leaving Privet Drive for the last time, Harry Potter knows that Lord Voldemort and the Death Eaters are not far behind. The protective charm that has kept Harry safe until now is broken, but he cannot keep hiding. The Dark Lord is breathing fear into everything Harry loves and to stop him Harry will have to find and destroy the remaining Horcruxes. The final battle must begin - Harry must stand and face his enemy...",
+    "compensation_fee": 1000,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1453841843i/28762147.jpg"
+  },
+  {
+    "book_id": 8,
+    "name": null,
+    "qty": 50,
+    "intro": "The prologue introduces the mysterious Others in the icy wilderness beyond the Wall.",
+    "content": "Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are massing beyond the kingdom’s protective Wall. To the south, the king’s powers are failing—his most trusted adviser dead under mysterious circumstances and his enemies emerging from the shadows of the throne. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the frozen land they were born to. Now Lord Eddard Stark is reluctantly summoned to serve as the king’s new Hand, an appointment that threatens to sunder not only his family but the kingdom itself.",
+    "compensation_fee": 1200,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1562726234i/13496.jpg"
+  },
+  {
+    "book_id": 9,
+    "name": null,
+    "qty": 20,
+    "intro": "The prologue sets the stage for the conflicts in the Seven Kingdoms.",
+    "content": "A comet the color of blood and flame cuts across the sky. Two great leaders—Lord Eddard Stark and Robert Baratheon—who hold sway over an age of enforced peace are dead, victims of royal treachery. Now, from the ancient citadel of Dragonstone to the forbidding shores of Winterfell, chaos reigns. Six factions struggle for control of a divided land and the Iron Throne of the Seven Kingdoms, preparing to stake their claims through tempest, turmoil, and war.",
+    "compensation_fee": 1200,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1567840212i/10572.jpg"
+  },
+  {
+    "book_id": 10,
+    "name": null,
+    "qty": 27,
+    "intro": "The prologue introduces new threats to the realm.",
+    "content": "Of the five contenders for power, one is dead, another in disfavor, and still the wars rage as alliances are made and broken. Joffrey sits on the Iron Throne, the uneasy ruler of the Seven Kingdoms. His most bitter rival, Lord Stannis, stands defeated and disgraced, victim of the sorceress who holds him in her thrall. Young Robb still rules the North from the fortress of Riverrun. Meanwhile, making her way across a blood-drenched continent is the exiled queen, Daenerys, mistress of the only three dragons still left in the world. And as opposing forces manoeuver for the final showdown, an army of barbaric wildlings arrives from the outermost limits of civilization, accompanied by a horde of mythical Others—a supernatural army of the living dead whose animated corpses are unstoppable. As the future of the land hangs in the balance, no one will rest until the Seven Kingdoms have exploded in a veritable storm of swords...",
+    "compensation_fee": 1200,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1571318786i/62291.jpg"
+  },
+  {
+    "book_id": 11,
+    "name": null,
+    "qty": 67,
+    "intro": "The prologue introduces the political intrigue in King's Landing.",
+    "content": "Bloodthirsty, treacherous and cunning, the Lannisters are in power on the Iron Throne in the name of the boy-king Tommen. The war in the Seven Kingdoms has burned itself out, but in its bitter aftermath new conflicts spark to life.",
+    "compensation_fee": 1200,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661026821i/13497.jpg"
+  },
+  {
+    "book_id": 12,
+    "name": null,
+    "qty": 62,
+    "intro": "The prologue sets up the various storylines in the series.",
+    "content": "In the aftermath of a colossal battle, the future of the Seven Kingdoms hangs in the balance—beset by newly emerging threats from every direction. In the east, Daenerys Targaryen, the last scion of House Targaryen, rules with her three dragons as queen of a city built on dust and death. But Daenerys has thousands of enemies, and many have set out to find her. As they gather, one young man embarks upon his own quest for the queen, with an entirely different goal in mind.",
+    "compensation_fee": 1200,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1581625286i/10664113.jpg"
+  },
+  {
+    "book_id": 13,
+    "name": null,
+    "qty": 42,
+    "intro": "Ten strangers are invited to a remote island.",
+    "content": "First, there were ten—a curious assortment of strangers summoned as weekend guests to a little private island off the coast of Devon. Their host, an eccentric millionaire unknown to all of them, is nowhere to be found. All that the guests have in common is a wicked past they're unwilling to reveal—and a secret that will seal their fate. For each has been marked for murder. A famous nursery rhyme is framed and hung in every room of the mansion. When they realize that murders are occurring as described in the rhyme, terror mounts. One by one they fall prey. Before the weekend is out, there will be none. Who has choreographed this dastardly scheme? And who will be left to tell the tale? Only the dead are above suspicion.",
+    "compensation_fee": 800,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1638425885i/16299.jpg"
+  },
+  {
+    "book_id": 14,
+    "name": null,
+    "qty": 26,
+    "intro": "A murder occurs on the famous train.",
+    "content": "Just after midnight, a snowdrift stops the famous Orient Express in its tracks as it travels through the mountainous Balkans. The luxurious train is surprisingly full for the time of the year but, by the morning, it is one passenger fewer. An American tycoon lies dead in his compartment, stabbed a dozen times, his door locked from the inside. One of the passengers is none other than detective Hercule Poirot. On vacation. Isolated and with a killer on board, Poirot must identify the murderer—in case he or she decides to strike again.",
+    "compensation_fee": 800,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1486131451i/853510.jpg"
+  },
+  {
+    "book_id": 15,
+    "name": null,
+    "qty": 29,
+    "intro": "Bella Swan's life changes dramatically after moving to Forks.",
+    "content": "About three things I was absolutely positive.\n\nFirst, Edward was a vampire.\n\nSecond, there was a part of him - and I didn't know how dominant that part might be - that thirsted for my blood.\n\nAnd third, I was unconditionally and irrevocably in love with him.",
+    "compensation_fee": 800,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1700522826i/41865.jpg"
+  },
+  {
+    "book_id": 16,
+    "name": "Episode 1",
+    "qty": 40,
+    "intro": "Spider-Man's origin story begins.",
+    "content": "Alone.\n\nThroughout his life, Peter Parker has often felt alone. When he first discovered his spider-like abilities after being bitten by a radioactive spider, he kept them secret. His attempts to exploit them for a profit resulted in his Uncle Ben's murder. Later, his attempts at maintaining the secret from his first love, Gwen Stacy, resulted in her death. It seemed as though no one understood the difficult balance between mortal and hero.\n\nUntil now, that is.\n\nA mysterious figure appears suddenly, exhibiting similar powers to Peter. He can stick to walls and jump from building to building, just like the wall-crawler. Who is the mystery man? Who are the people he represents? And what is the ancient evil that has arrived in America in search of Peter?",
+    "compensation_fee": 500,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1505583716i/599052.jpg"
+  },
+  {
+    "book_id": 16,
+    "name": "Episode 2",
+    "qty": 30,
+    "intro": "Spider-Man faces new challenges.",
+    "content": "In the wake of the World Trade Center tragedy, Spider-Man comes to understand that not all heroes possess great powers. Meanwhile, Aunt May struggles with her discovery of Peter's greatest secret.",
+    "compensation_fee": 500,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1505583407i/707695.jpg"
+  },
+  {
+    "book_id": 16,
+    "name": "Episode 3",
+    "qty": 36,
+    "intro": "Spider-Man continues his fight against crime.",
+    "content": "Detailed description of the episode.",
+    "compensation_fee": 500,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1505583467i/599049.jpg"
+  },
+  {
+    "book_id": 17,
+    "name": "Episode 1",
+    "qty": 87,
+    "intro": "The story of Shinichi Kudo begins.",
+    "content": "High-school mystery fan Shinichi Kudo is actually one of his high school's best minds, but he gets his reality checks from his childhood friend and almost-girlfriend Ran Mori. Nothing can keep Shinichi from a case, until he follows a suspicious man into a park, is accosted from behind and fed a strange chemical which renders him unconscious. When he awakens, he has been transformed into a puny grade schooler!",
+    "compensation_fee": 600,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1461862309i/1795597.jpg"
+  },
+  {
+    "book_id": 17,
+    "name": "Episode 2",
+    "qty": 80,
+    "intro": "The case of the mysterious stranger.",
+    "content": "High-school mystery fan Shinichi Kudo is actually one of his high school's best minds, but he gets his reality checks from his childhood friend and almost-girlfriend Ran Mori. Nothing can keep Shinichi from a case, until he follows a suspicious man into a park, is accosted from behind and fed a strange chemical which renders him unconscious. When he awakens, he has been transformed into a puny grade schooler!",
+    "compensation_fee": 600,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1329722676i/1198724.jpg"
+  },
+  {
+    "book_id": 17,
+    "name": "Episode 3",
+    "qty": 90,
+    "intro": "The investigation of a high-profile murder.",
+    "content": "The book contained only two stories, the Hatamoto Family Case and the Monthly Present Case.",
+    "compensation_fee": 600,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1329723352i/1953656.jpg"
+  },
+  {
+    "book_id": 17,
+    "name": "Episode 4",
+    "qty": 120,
+    "intro": "Shinichi investigates a new case.",
+    "content": "There was a rumor that there has been a medieval suit of armor walking by itself at night there. And since Ran was curious, she forced Kogoro and Conan to accompany her there.",
+    "compensation_fee": 600,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1329723852i/2322676.jpg"
+  },
+  {
+    "book_id": 18,
+    "name": "Episode 1",
+    "qty": 20,
+    "intro": "Luffy begins his journey to become Pirate King.",
+    "content": "A new shonen sensation in Japan, this series features Monkey D. Luffy, whose main ambition is to become a pirate. Eating the Gum-Gum Fruit gives him strange powers but also invokes the fruit's curse: anybody who consumes it can never learn to swim. Nevertheless, Monkey and his crewmate Roronoa Zoro, master of the three-sword fighting style, sail the Seven Seas of swashbuckling adventure in search of the elusive treasure One Piece.",
+    "compensation_fee": 600,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1318523719i/1237398.jpg"
+  },
+  {
+    "book_id": 18,
+    "name": "Episode 2",
+    "qty": 15,
+    "intro": "Luffy recruits his first crew member.",
+    "content": "As a kid, Monkey D. Luffy vowed to become King of the Pirates and find the legendary treasure called the One Piece. The enchanted Gum-Gum Fruit has given Luffy the power to stretch like rubber--and his new crewmate, the infamous pirate hunter Roronoa Zolo, strikes fear into the hearts of other buccaneers! But what chance does one rubber guy stand against Nami, a thief so tough she specializes in robbing pirates...or Captain Buggy, a fiendish pirate lord whose weird, clownish appearance conceals even weirder powers? It's pirate vs. pirate in the second swashbuckling volume of One Piece!",
+    "compensation_fee": 600,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388531494i/364956.jpg"
+  },
+  {
+    "book_id": 18,
+    "name": "Episode 3",
+    "qty": 10,
+    "intro": "The crew faces new challenges.",
+    "content": "Sure, lots of people say they want to be the King of the Pirates, but how many have the guts to do what it takes? When Monkey D. Luffy first set out to sea in a leaky rowboat, he had no idea what might lie over the horizon. Now he's got a crew--sort of--in the form of swordsman Roronoa Zolo and treasure-hunting thief Nami. If he wants to prove himself on the high seas, Luffy will have to defeat the weird pirate lord Buggy the Clown. He'll have to find a map to the Grand Line, the sea route where the toughest pirates sail. And he'll have to face the Dread Captain Usopp, who claims to be a notorious pirate captain...but frankly, Usopp says a lot of things...",
+    "compensation_fee": 600,
+    "thumb": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388531492i/364957.jpg"
+  }
+]

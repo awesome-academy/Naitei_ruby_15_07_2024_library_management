@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Fiction",
+    "subcategories": [
+      {
+        "name": "Science Fiction"
+      },
+      {
+        "name": "Fantasy"
+      },
+      {
+        "name": "Mystery"
+      },
+      {
+        "name": "Romance"
+      },
+      {
+        "name": "Horror"
+      }
+    ]
+  },
+  {
+    "name": "Non-Fiction",
+    "subcategories": [
+      {
+        "name": "History"
+      },
+      {
+        "name": "Science"
+      },
+      {
+        "name": "Biography"
+      },
+      {
+        "name": "Self-Help"
+      },
+      {
+        "name": "Business"
+      }
+    ]
+  },
+  {
+    "name": "Children's Book"
+  },
+  {
+    "name": "Comic"
+  },
+  {
+    "name": "Textbook",
+    "subcategories": [
+      {
+        "name": "School Textbooks",
+        "subcategories": [
+          {
+            "name": "Elementary"
+          },
+          {
+            "name": "Middle School"
+          },
+          {
+            "name": "High School"
+          }
+        ]
+      },
+      {
+        "name": "University Textbooks"
+      }
+    ]
+  }
+]

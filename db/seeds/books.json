@@ -1,0 +1,183 @@
+[
+  {
+    "name": "Harry Potter and the Philosopher's Stone",
+    "publisher_id": 1,
+    "author_ids": [
+      1
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "Harry Potter and the Chamber of Secrets",
+    "publisher_id": 1,
+    "author_ids": [
+      1
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "Harry Potter and the Prisoner of Azkaban",
+    "publisher_id": 1,
+    "author_ids": [
+      1
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "Harry Potter and the Goblet of Fire",
+    "publisher_id": 1,
+    "author_ids": [
+      1
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "Harry Potter and the Order of the Phoenix",
+    "publisher_id": 1,
+    "author_ids": [
+      1
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "Harry Potter and the Half-Blood Prince",
+    "publisher_id": 1,
+    "author_ids": [
+      1
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "Harry Potter and the Deathly Hallows",
+    "publisher_id": 1,
+    "author_ids": [
+      1
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "A Game of Thrones",
+    "publisher_id": 2,
+    "author_ids": [
+      2
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "A Clash of Kings",
+    "publisher_id": 2,
+    "author_ids": [
+      2
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "A Storm of Swords",
+    "publisher_id": 2,
+    "author_ids": [
+      2
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "A Feast for Crows",
+    "publisher_id": 2,
+    "author_ids": [
+      2
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "A Dance with Dragons",
+    "publisher_id": 2,
+    "author_ids": [
+      2
+    ],
+    "category_ids": [
+      3
+    ]
+  },
+  {
+    "name": "And Then There Were None",
+    "publisher_id": 3,
+    "author_ids": [
+      3
+    ],
+    "category_ids": [
+      4
+    ]
+  },
+  {
+    "name": "Murder on the Orient Express",
+    "publisher_id": 3,
+    "author_ids": [
+      3
+    ],
+    "category_ids": [
+      4
+    ]
+  },
+  {
+    "name": "Twilight",
+    "publisher_id": 4,
+    "author_ids": [
+      4
+    ],
+    "category_ids": [
+      14
+    ]
+  },
+  {
+    "name": "The Amazing Spider-Man",
+    "publisher_id": 5,
+    "author_ids": [
+      5
+    ],
+    "category_ids": [
+      14
+    ]
+  },
+  {
+    "name": "Detective Conan",
+    "publisher_id": 6,
+    "author_ids": [
+      6
+    ],
+    "category_ids": [
+      4,
+      14
+    ]
+  },
+  {
+    "name": "One Piece",
+    "publisher_id": 7,
+    "author_ids": [
+      7
+    ],
+    "category_ids": [
+      14
+    ]
+  }
+]

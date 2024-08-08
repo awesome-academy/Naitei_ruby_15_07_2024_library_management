@@ -1,0 +1,58 @@
+[
+  {
+    "name": "J.K. Rowling",
+    "intro": "British author, best known for the Harry Potter series.",
+    "bio": "J.K. Rowling is the author of the Harry Potter series, which has won multiple awards and sold over 500 million copies worldwide.",
+    "dob": "1965-07-31",
+    "dod": null,
+    "thumb": "https://images.gr-assets.com/authors/1596216614p5/1077326.jpg"
+  },
+  {
+    "name": "George R.R. Martin",
+    "intro": "American novelist and short story writer, known for the 'A Song of Ice and Fire' series.",
+    "bio": "George R.R. Martin is the author of the popular 'A Song of Ice and Fire' series, which has been adapted into the television series 'Game of Thrones'.",
+    "dob": "1948-09-20",
+    "dod": null,
+    "thumb": "https://images.gr-assets.com/authors/1649011787p5/346732.jpg"
+  },
+  {
+    "name": "Agatha Christie",
+    "intro": "Renowned British author of mystery novels.",
+    "bio": "Agatha Christie is known for her detective novels and short stories, particularly those featuring Hercule Poirot and Miss Marple.",
+    "dob": "1890-09-15",
+    "dod": "1976-01-12",
+    "thumb": "https://images.gr-assets.com/authors/1589991473p5/123715.jpg"
+  },
+  {
+    "name": "Stephenie Meyer",
+    "intro": "American author best known for the Twilight series.",
+    "bio": "Stephenie Meyer is an American author, best known for the Twilight series.",
+    "dob": "1973-12-24",
+    "dod": null,
+    "thumb": "https://images.gr-assets.com/authors/1596739281p5/941441.jpg"
+  },
+  {
+    "name": "Stan Lee",
+    "intro": "American comic book writer and editor.",
+    "bio": "Stan Lee was an American comic book writer, editor, and publisher.",
+    "dob": "1922-12-28",
+    "dod": "2018-11-12",
+    "thumb": "https://images.gr-assets.com/authors/1206594565p5/10303.jpg"
+  },
+  {
+    "name": "Gosho Aoyama",
+    "intro": "Japanese manga artist, creator of Detective Conan.",
+    "bio": "Gosho Aoyama is a Japanese manga artist known for his work on Detective Conan.",
+    "dob": "1963-06-21",
+    "dod": null,
+    "thumb": "https://images.gr-assets.com/authors/1309609172p5/4958172.jpg"
+  },
+  {
+    "name": "Eiichiro Oda",
+    "intro": "Japanese manga artist, creator of One Piece.",
+    "bio": "Eiichiro Oda is a Japanese manga artist, known for his popular series One Piece.",
+    "dob": "1975-01-01",
+    "dod": null,
+    "thumb": "https://images.gr-assets.com/authors/1607095071p5/208650.jpg"
+  }
+]

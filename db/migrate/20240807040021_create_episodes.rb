@@ -5,7 +5,7 @@ class CreateEpisodes < ActiveRecord::Migration[7.0]
       t.string :name
       t.integer :qty
       t.string :intro
-      t.string :content
+      t.text :content
       t.integer :compensation_fee
       t.string :thumb
 
