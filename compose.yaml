@@ -1,0 +1,56 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - "mysql_data:/var/lib/mysql"
+    ports:
+      - "3307:3306"
+    networks:
+      - app_network
+
+  app:
+    build: .
+    command: bash -c "./db-setup.sh db bundle exec rails s -b '0.0.0.0'"
+    volumes:
+      - ".:/app"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - redis
+    environment:
+      DATABASE_HOST: db
+      MYSQL_USERNAME: ${MYSQL_USERNAME}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      REDIS_URL: ${REDIS_URL}
+      RAILS_ENV: development
+    networks:
+      - app_network
+
+  redis:
+    image: redis:6.2.6
+    ports:
+      - "6380:6379"
+
+  sidekiq:
+    build: .
+    command: bundle exec sidekiq
+    depends_on:
+      - redis
+      - db
+    volumes:
+      - ".:/app"
+    environment:
+      REDIS_URL: ${REDIS_URL}
+      RAILS_ENV: development
+
+volumes:
+  mysql_data:
+
+networks:
+  app_network:
+    driver: bridge
