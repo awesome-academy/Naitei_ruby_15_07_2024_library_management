@@ -66,6 +66,8 @@ models:
     limit: 6
   book_borrow:
     max_borrow_duration: 5
+es:
+  max_hits: 10000
 date_format: "%Y-%m-%d"
 page: 10
 avatar:

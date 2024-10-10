@@ -450,6 +450,7 @@ vi:
     episodes:
       all:
         link_page: "Thư viện"
+        name: "Tên"
         cat: "Danh mục"
         publisher: "Nhà xuất bản"
         author: "Tác giả"
