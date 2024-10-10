@@ -1,4 +1,6 @@
 class Episode < ApplicationRecord
+  include Searchable
+
   SEARCH_PARAMS = %i(book_id publisher_id author_id category_id).freeze
   EPISODE_PARAMS = %i(
     name
@@ -98,11 +100,49 @@ class Episode < ApplicationRecord
     %w(book publisher categories authors)
   end
 
-  def self.search params
-    Episode.by_book(params[:book_id])
-           .by_publisher(params[:publisher_id])
-           .by_author(params[:author_id])
-           .by_category(params[:category_id])
+  def self.search_episodes \
+    name:,
+    book_id:,
+    publisher_id:,
+    author_id:,
+    category_id:
+
+    must_conditions = []
+    must_conditions << {term: {book_id:}} if book_id.present?
+    must_conditions << {term: {publisher_id:}} if publisher_id.present?
+    must_conditions << {term: {author_id:}} if author_id.present?
+    must_conditions << {term: {category_id:}} if category_id.present?
+
+    query = {
+      size: Settings.es.max_hits,
+      query: {
+        bool: {
+          must: must_conditions
+        }
+      }
+    }
+
+    if name.present?
+      query[:query][:bool][:should] = [
+        match: {
+          name: {
+            query: name,
+            fuzziness: "AUTO"
+          }
+        }
+      ]
+    end
+
+    if must_conditions.empty? && name.blank?
+      return __elasticsearch__.search(
+        {
+          size: Settings.es.max_hits,
+          query: {match_all: {}}
+        }
+      ).records.to_a
+    end
+
+    __elasticsearch__.search(query).records.to_a
   end
 
   def average_rating
