@@ -443,6 +443,7 @@ en:
     episodes:
       all:
         link_page: "Library"
+        name: "Name"
         cat: "Category"
         publisher: "Publisher"
         author: "Author"

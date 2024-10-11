@@ -25,6 +25,14 @@ class Book < ApplicationRecord
   scope :sorted_by_name, ->{order(name: :asc)}
   scope :sorted_by_created, ->{order(created_at: :desc)}
 
+  def author_ids
+    authors.pluck(:id)
+  end
+
+  def category_ids
+    categories.pluck(:id)
+  end
+
   def self.ransackable_attributes _auth_object = nil
     %w(created_at id name publisher_id updated_at)
   end
