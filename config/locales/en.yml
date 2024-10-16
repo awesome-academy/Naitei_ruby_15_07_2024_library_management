@@ -29,6 +29,7 @@ en:
           returned: "Returned"
           overdue: "Overdue"
           lost: "Lost"
+  activemodel:
     errors:
       messages:
         after_date_of_birth: "must be after the Date of Birth"
@@ -276,7 +277,7 @@ en:
       create_fail: "Failed to create author."
       updated: "Author updated successfully."
       update_fail: "Failed to update author."
-      deleted: "Publisher deleted successfully."
+      deleted: "Author deleted successfully."
       delete_fail: "Failed to delete author."
       not_found: "Author not found."
     borrow_books:

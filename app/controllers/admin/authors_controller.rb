@@ -15,7 +15,7 @@ class Admin::AuthorsController < AdminController
   end
 
   def new
-    @author = Author.new
+    @form = AuthorForm.new(Author.new)
     @breadcrumb_items = [
       {name: t(".index.title"), url: admin_authors_path},
       {name: t(".new.title")}
@@ -23,10 +23,11 @@ class Admin::AuthorsController < AdminController
   end
 
   def create
-    @author = Author.new author_params
-    if @author.save
+    @form = AuthorForm.new(Author.new, author_params)
+
+    if @form.save
       flash[:success] = t "message.authors.created"
-      redirect_to admin_author_path(@author), status: :see_other
+      redirect_to admin_author_path(@form.author), status: :see_other
     else
       flash[:danger] = t "message.authors.create_fail"
       render :new, status: :unprocessable_entity
@@ -34,6 +35,7 @@ class Admin::AuthorsController < AdminController
   end
 
   def edit
+    @form = AuthorForm.new(@author)
     @breadcrumb_items = [
       {name: t(".index.title"), url: admin_authors_path},
       {name: @author.name, url: admin_author_path(@author)},
@@ -42,9 +44,11 @@ class Admin::AuthorsController < AdminController
   end
 
   def update
-    if @author.update author_params
+    @form = AuthorForm.new(@author, author_params)
+
+    if @form.save
       flash[:success] = t "message.authors.updated"
-      redirect_to admin_author_path(@author)
+      redirect_to admin_author_path(@form.author), status: :see_other
     else
       flash[:danger] = t "message.authors.update_fail"
       render :edit, status: :unprocessable_entity
@@ -57,7 +61,7 @@ class Admin::AuthorsController < AdminController
     else
       flash[:danger] = t "message.authors.delete_fail"
     end
-    redirect_to admin_authors_path
+    redirect_to admin_authors_path, status: :see_other
   end
 
   private
@@ -67,7 +71,7 @@ class Admin::AuthorsController < AdminController
   end
 
   def load_author
-    @author = Author.find_by id: params[:id]
+    @author = Author.find_by(id: params[:id])
     return if @author
 
     flash[:danger] = t "message.authors.not_found"

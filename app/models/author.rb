@@ -7,14 +7,6 @@ class Author < ApplicationRecord
   has_many :episodes, through: :books
   has_one_attached :thumb_img
 
-  validates :name, presence: true,
-            length: {maximum: Settings.models.author.name.max_length}
-  validates :intro, presence: true,
-            length: {maximum: Settings.models.author.intro.max_length}
-  validates :bio, presence: true
-  validates :dob, presence: true
-  validate :date_of_death_not_before_date_of_birth
-
   scope :sorted_by_name, ->{order(name: :asc)}
   scope :sorted_by_created, ->{order(created_at: :desc)}
 
@@ -24,15 +16,5 @@ class Author < ApplicationRecord
 
   def self.ransackable_associations _auth_object = nil
     %w(book_authors books episodes favorites)
-  end
-
-  private
-
-  def date_of_death_not_before_date_of_birth
-    return if dod.blank? || dob.blank?
-
-    return unless dod < dob
-
-    errors.add(:dod, :after_date_of_birth)
   end
 end
