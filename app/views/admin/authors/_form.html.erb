@@ -1,5 +1,5 @@
-<%= form_for [:admin, @author], html: { multipart: true } do |f| %>
-  <%= render "admin/shared/error_messages", object: @author %>
+<%= form_with model: @form.author, url: @form.author.persisted? ? admin_author_path(@form.author) : admin_authors_path, local: true do |f| %>
+  <%= render "admin/shared/error_messages", object: @form %>
 
   <div class="form-group">
     <%= f.label :name, t("admin.authors.show.name") %>
