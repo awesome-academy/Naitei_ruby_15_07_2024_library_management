@@ -6,10 +6,18 @@ class EpisodesController < ApplicationController
   def show; end
 
   def all
-    @q = Episode.ransack params[:q]
-    @episodes_search = @q.result distinct: true
-    @pagy, @episodes = pagy(
-      @episodes_search,
+    @q = params[:episode_name]
+
+    @search_results = Episode.search_episodes(
+      name: params[:episode_name],
+      book_id: params[:book_id],
+      publisher_id: params[:publisher_id],
+      author_id: params[:authors_id],
+      category_id: params[:categories_id]
+    )
+
+    @pagy, @episodes = pagy_array(
+      @search_results,
       limit: Settings.controllers.episodes.all.per_page
     )
   end

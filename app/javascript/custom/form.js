@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var multiSelects = form.querySelectorAll('select[multiple]');
     multiSelects.forEach(function(select) {
-      for (var i = 0; i < select.options.length; i++) {
-        select.options[i].selected = false;
-      }
+      select.querySelectorAll('option').forEach(option => option.selected = false);
 
       const hiddenInput = select.previousElementSibling;
       hiddenInput.value = '';

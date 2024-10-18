@@ -5,16 +5,18 @@
 <div class="row page-container mt-3">
   <div class="col-md-8 mx-auto details">
     <ul class="list-unstyled">
-      <li class="list-group-item"><strong><%= t ".user" %>:</strong> <%= @borrow_book.borrow_card.user.name %></li>
-      <li class="list-group-item"><strong><%= t ".book" %>:</strong> <%= @borrow_book.episode.book.name %></li>
-      <li class="list-group-item"><strong><%= t ".episode" %>:</strong> <%= @borrow_book.episode.name %></li>
-      <li class="list-group-item"><strong><%= t ".status" %>:</strong> <%= @borrow_book.localized_status %></li>
-      <% unless @borrow_book.status == "pending" %>
-        <li class="list-group-item"><strong><%= t ".start_time" %>:</strong> <%= @borrow_book.borrow_card.start_time.strftime(Settings.date_format) %></li>
-        <li class="list-group-item"><strong><%= t ".due_date" %>:</strong> <%= @borrow_book.borrow_card.due_date.strftime(Settings.date_format) %></li>
+      <li class="list-group-item"><strong><%= t ".user" %>:</strong> <%= @presenter.user %></li>
+      <li class="list-group-item"><strong><%= t ".book" %>:</strong> <%= @presenter.book %></li>
+      <li class="list-group-item"><strong><%= t ".episode" %>:</strong> <%= @presenter.episode %></li>
+      <li class="list-group-item"><strong><%= t ".status" %>:</strong> <%= @presenter.localized_status %></li>
+      <% if @presenter.start_time %>
+        <li class="list-group-item"><strong><%= t ".start_time" %>:</strong> <%= @presenter.start_time %></li>
       <% end %>
-      <% if @borrow_book.status == "pending" %>
-        <li class="list-group-item"><strong><%= t ".created_at" %>:</strong> <%= @borrow_book.created_at.strftime(Settings.date_format) %></li>
+      <% if @presenter.due_date %>
+        <li class="list-group-item"><strong><%= t ".due_date" %>:</strong> <%= @presenter.due_date %></li>
+      <% end %>
+      <% if @presenter.created_at %>
+        <li class="list-group-item"><strong><%= t ".created_at" %>:</strong> <%= @presenter.created_at %></li>
       <% end %>
     </ul>
   </div>
