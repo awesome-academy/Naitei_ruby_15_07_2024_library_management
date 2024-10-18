@@ -1,43 +1,33 @@
-<% index = borrow_book_counter + 1 %>
+<% index = presenter_counter + 1 %>
 <tr>
   <td class="text-center"><%= index %></td>
-  <td><%= borrow_book.episode.book.name %></td>
-  <td><%= borrow_book.episode.name %></td>
-  <td><%= borrow_book.lost_reason %></td>
+  <td><%= presenter.book %></td>
+  <td><%= presenter.episode %></td>
+  <td><%= presenter.lost_reason %></td>
   <td class="text-center">
-    <% status_badge_classes = {
-      pending: "badge bg-secondary",
-      confirm: "badge bg-primary",
-      returned: "badge bg-success",
-      overdue: "badge bg-warning",
-      lost: "badge bg-danger",
-      cancel: "badge bg-dark"
-    } %>
-    <span class="<%= status_badge_classes[borrow_book.status.to_sym] %>">
-      <%= borrow_book.localized_status.upcase %>
+    <span class="<%= presenter.status_badge_class %>">
+      <%= presenter.formatted_status %>
     </span>
   </td>
 
-
-
   <td class="text-right pr-5">
     <% if action_type == :return %>
-      <%= link_to returned_admin_borrow_book_path(borrow_book), data: { turbo_method: :patch }, class: "btn btn-success" do %>
+      <%= link_to returned_admin_borrow_book_path(presenter.borrow_book), data: { turbo_method: :patch }, class: "btn btn-success" do %>
         <i class="fas fa-check"></i>
       <% end %>
-      <%= link_to lost_admin_borrow_book_path(borrow_book), data: { turbo_method: :patch }, class: "btn btn-danger" do %>
+      <%= link_to lost_admin_borrow_book_path(presenter.borrow_book), data: { turbo_method: :patch }, class: "btn btn-danger" do %>
         <i class="fas fa-xmark"></i>
       <% end %>
     <% elsif action_type == :borrow %>
-      <%= link_to confirm_admin_borrow_book_path(borrow_book), data: { turbo_method: :patch }, class: "btn btn-success" do %>
+      <%= link_to confirm_admin_borrow_book_path(presenter.borrow_book), data: { turbo_method: :patch }, class: "btn btn-success" do %>
         <i class="fas fa-check"></i>
       <% end %>
-      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#rejectModal-<%= borrow_book.id %>">
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#rejectModal-<%= presenter.borrow_book.id %>">
         <i class="fas fa-xmark"></i>
       </button>
-      <%= render "admin/borrow_books/reject_modal", borrow_book: borrow_book %>
+      <%= render "admin/borrow_books/reject_modal", borrow_book: presenter.borrow_book %>
     <% end %>
-    <%= link_to admin_borrow_book_path(borrow_book), class: "btn btn-primary" do %>
+    <%= link_to admin_borrow_book_path(presenter.borrow_book), class: "btn btn-primary" do %>
       <i class="fas fa-magnifying-glass"></i>
     <% end %>
   </td>

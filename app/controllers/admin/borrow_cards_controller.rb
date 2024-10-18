@@ -30,6 +30,9 @@ class Admin::BorrowCardsController < AdminController
                                   type: :pending)
     @borrow_books = search.call
     @pagy, @borrow_books = pagy(@borrow_books, items: Settings.page)
+    @presenters = @borrow_books.map do |borrow_book|
+      BorrowBookPresenter.new borrow_book
+    end
     @breadcrumb_items = [
       {name: t(".borrow_index.title"), url: borrow_admin_borrow_cards_path},
       {name: @borrow_card.id}
@@ -41,8 +44,11 @@ class Admin::BorrowCardsController < AdminController
                                   type: :return_requests)
     @borrow_books = search.call
     @pagy, @borrow_books = pagy(@borrow_books, items: Settings.page)
+    @presenters = @borrow_books.map do |borrow_book|
+      BorrowBookPresenter.new borrow_book
+    end
     @breadcrumb_items = [
-      {name: t(".borrow_index.title"), url: return_admin_borrow_cards_path},
+      {name: t(".return_index.title"), url: return_admin_borrow_cards_path},
       {name: @borrow_card.id}
     ]
   end
@@ -52,8 +58,11 @@ class Admin::BorrowCardsController < AdminController
                                   type: :history_requests)
     @borrow_books = search.call
     @pagy, @borrow_books = pagy(@borrow_books, items: Settings.page)
+    @presenters = @borrow_books.map do |borrow_book|
+      BorrowBookPresenter.new borrow_book
+    end
     @breadcrumb_items = [
-      {name: t(".borrow_index.title"), url: history_admin_borrow_cards_path},
+      {name: t(".history_index.title"), url: history_admin_borrow_cards_path},
       {name: @borrow_card.id}
     ]
   end

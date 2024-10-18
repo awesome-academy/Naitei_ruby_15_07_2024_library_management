@@ -5,6 +5,7 @@ class Admin::BorrowBooksController < AdminController
     @breadcrumb_items = [
       {name: @borrow_book.id}
     ]
+    @presenter = BorrowBookPresenter.new @borrow_book
   end
 
   def confirm
