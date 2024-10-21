@@ -5,6 +5,7 @@ class Admin::BorrowBooksController < AdminController
     @breadcrumb_items = [
       {name: @borrow_book.id}
     ]
+    @presenter = BorrowBookPresenter.new @borrow_book
   end
 
   def confirm
@@ -20,7 +21,7 @@ class Admin::BorrowBooksController < AdminController
     else
       flash[:danger] = t "message.borrow_books.qty_insufficient"
     end
-    redirect_to borrow_admin_borrow_books_path
+    redirect_to borrow_admin_borrow_cards_path
   end
 
   def cancel
@@ -31,7 +32,7 @@ class Admin::BorrowBooksController < AdminController
     else
       flash[:danger] = t "message.borrow_books.status_fail"
     end
-    redirect_to borrow_admin_borrow_books_path
+    redirect_to borrow_admin_borrow_cards_path
   end
 
   def returned
@@ -43,7 +44,7 @@ class Admin::BorrowBooksController < AdminController
     else
       flash[:error] = t "message.borrow_books.status_fail"
     end
-    redirect_to return_admin_borrow_books_path
+    redirect_to return_admin_borrow_cards_path
   end
 
   def lost
@@ -57,7 +58,7 @@ class Admin::BorrowBooksController < AdminController
       flash[:error] = t "message.borrow_books.status_fail"
     end
 
-    redirect_to return_admin_borrow_books_path
+    redirect_to return_admin_borrow_cards_path
   end
 
   def refresh
@@ -75,7 +76,7 @@ class Admin::BorrowBooksController < AdminController
     end
 
     flash[:success] = t "message.borrow_books.refresh_success"
-    redirect_to return_admin_borrow_books_path
+    redirect_to return_admin_borrow_cards_path
   end
 
   private
@@ -85,7 +86,7 @@ class Admin::BorrowBooksController < AdminController
     return if @borrow_book
 
     flash[:danger] = t "message.borrow_books.not_found"
-    redirect_to admin_borrow_books_path
+    redirect_to admin_borrow_cards_path
   end
 
   def activate_overdue_user

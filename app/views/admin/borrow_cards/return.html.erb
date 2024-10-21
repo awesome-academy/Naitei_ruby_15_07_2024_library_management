@@ -17,7 +17,7 @@
             </tr>
           </thead>
           <tbody>
-            <%= render partial: "book_row", collection: @borrow_books, as: :borrow_book, locals: { action_type: :return } %>
+            <%= render partial: "book_row", collection: @presenters, as: :presenter, locals: { action_type: :return } %>
           </tbody>
         </table>
       </div>

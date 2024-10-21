@@ -67,22 +67,19 @@ class User < ApplicationRecord
   end
 
   def can_borrow_episode? episode
-    errors.clear
-    validate_activation
-    validate_blacklist
-    validate_episode_in_cart episode
-    validate_episode_quantity episode
-    validate_borrowing_limit
+    policy = BorrowPolicy.new(self, episode)
+    return true if policy.can_borrow_episode?
 
-    errors.empty?
+    errors.add(:base, policy.errors.join("\n"))
+    false
   end
 
   def can_checkout_cart?
-    errors.clear
-    validate_activation
-    validate_blacklist
+    policy = BorrowPolicy.new self
+    return true if policy.can_checkout_cart?
 
-    errors.empty?
+    errors.add(:base, policy.errors.join("\n"))
+    false
   end
 
   private
@@ -96,36 +93,6 @@ class User < ApplicationRecord
 
     self.activated = false
     self.blacklisted = true
-  end
-
-  def validate_activation
-    return if activated
-
-    errors.add :base, I18n.t("controllers.episodes.error_active")
-  end
-
-  def validate_blacklist
-    return unless blacklisted
-
-    errors.add :base, I18n.t("controllers.episodes.error_blacklist")
-  end
-
-  def validate_episode_in_cart episode
-    return unless carts.exists? episode: episode
-
-    errors.add :base, I18n.t("controllers.episodes.error_exists")
-  end
-
-  def validate_episode_quantity episode
-    return if episode.qty >= 1
-
-    errors.add :base, I18n.t("controllers.episodes.error_qty")
-  end
-
-  def validate_borrowing_limit
-    return if currently_borrowing_episodes_count < Settings.max_book
-
-    errors.add :base, I18n.t("controllers.episodes.error_max")
   end
 
   def dob_after_start_year

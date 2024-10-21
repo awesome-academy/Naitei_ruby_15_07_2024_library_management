@@ -1,32 +1,16 @@
 <div class="col-lg-2 col-md-6 col-sm-6">
   <div class="item">
     <div class="thumb">
-      <% if item.is_a?(Episode) %>
-        <%= link_to book_episode_path(item.book, item) do %>
-          <%= image_tag item.thumb %>
-        <% end %>
-      <% else %>
-        <%= link_to author_path(item) do %>
-          <%= image_tag author_image(item) %>
-        <% end %>
+      <%= link_to item.link_path do %>
+        <%= item.image_tag %>
       <% end %>
     </div>
     <div class="down-content">
-      <% if item.is_a?(Episode) %>
-        <% if item.name.present? %>
-          <span class="category truncate-text"><%= item.book.name %></span>
-          <h4 class="truncate-text"><%= item.name %></h4>
-        <% else %>
-          <h4 class="truncate-text"><%= item.book.name %></h4>
-        <% end %>
-      <% else %>
-        <h4 class="truncate-text"><%= item.name %></h4>
+      <% if item.category_name.present? %>
+        <span class="category truncate-text"><%= item.category_name %></span>
       <% end %>
-      <% if item.is_a?(Episode) %>
-        <%= link_to t("views.favorites.explore"), book_episode_path(item.book, item) %>
-      <% else %>
-        <%= link_to t("views.favorites.explore"), author_path(item) %>
-      <% end %>
+      <h4 class="truncate-text"><%= item.display_name %></h4>
+      <%= item.explore_link %>
     </div>
   </div>
 </div>

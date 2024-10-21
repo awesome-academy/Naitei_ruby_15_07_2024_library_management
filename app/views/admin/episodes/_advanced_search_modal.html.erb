@@ -8,12 +8,12 @@
       <div class="modal-body">
         <%= search_form_for @q, url: admin_episodes_path, method: :get, html: { class: "advanced-search-form", id: "advancedSearchForm" } do |f| %>
           <div class="mb-3">
-            <%= f.label :name_cont, t("admin.episodes.new.book") %>
+            <%= f.label :name, t("admin.episodes.new.book") %>
             <%= f.text_field :name_cont, class: "form-control" %>
           </div>
 
           <div class="mb-3">
-            <%= f.label :book_id_eq, t("admin.episodes.new.book") %>
+            <%= f.label :book_id, t("admin.episodes.new.book") %>
             <%= f.collection_select :book_id_eq, @books, :id, :name, { include_blank: "Select a book" }, { class: "form-control" } %>
           </div>
 
