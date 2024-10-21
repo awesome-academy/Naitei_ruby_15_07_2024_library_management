@@ -36,6 +36,10 @@ vi:
         invalid: "không hợp lệ"
         too_short: "quá ngắn (tối thiểu %{count} ký tự)."
         after_date_of_birth: "phải sau ngày sinh"
+  activemodel:
+    errors:
+      messages:
+        after_date_of_birth: "phải sau ngày sinh"
   admin:
     dashboard:
       index:
@@ -279,7 +283,7 @@ vi:
       not_found: "Không tìm thấy nhà xuất bản."
     authors:
       created: "Tạo tác giả thành công."
-      create_fail: "TạoTạo tác giả thất bại."
+      create_fail: "Tạo tác giả thất bại."
       updated: "Cập nhật tác giả thành công."
       update_fail: "Cập nhật tác giả thất bại."
       deleted: "Xóa tác giả thành công."
@@ -450,6 +454,7 @@ vi:
     episodes:
       all:
         link_page: "Thư viện"
+        name: "Tên"
         cat: "Danh mục"
         publisher: "Nhà xuất bản"
         author: "Tác giả"

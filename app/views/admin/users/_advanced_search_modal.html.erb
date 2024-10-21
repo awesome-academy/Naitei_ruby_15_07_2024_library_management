@@ -8,7 +8,7 @@
       <div class="modal-body">
         <%= search_form_for @q, url: admin_users_path, method: :get, html: {class: "advanced-search-form", id: "advancedSearchForm"} do |f| %>
           <div class="mb-3">
-            <%= f.label :name_cont, t("admin.users.form.name") %>
+            <%= f.label :name, t("admin.users.form.name") %>
             <%= f.text_field :name_cont, class: "form-control" %>
           </div>
           <div class="mb-3">

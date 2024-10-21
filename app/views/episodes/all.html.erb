@@ -1,46 +1,62 @@
 <% provide :link_page do %>
-  <%= t "views.episodes.all.link_page" %> 
+  <%= t "views.episodes.all.link_page" %>
 <% end %>
 
 <%= render "shared/client_page_heading" %>
 
 <div class="section trending">
   <div class="container">
-    <div class="row mb-5 mx-4" id="filter">
-      <%= search_form_for @q, url: all_episodes_path, method: :get, local: true, html: { class: "col-md-12 row" } do |f| %>
-        <div class="col-md-8">
-          <div class="row">
-            <div class="form-group mb-3 col-md-6">
-              <%= f.select :categories_id_eq, 
-                           options_from_collection_for_select(@cats, :id, :name, selected: params.dig(:q, :categories_id_eq)), 
-                           {include_blank: t("views.episodes.all.cat")}, 
-                           {data: {controller: "slim"}} %>
-            </div>
-            <div class="form-group mb-3 col-md-6">
-              <%= f.select :publisher_id_eq, 
-                           options_from_collection_for_select(@publishers, :id, :name, selected: params.dig(:q, :publisher_id_eq)), 
-                           {include_blank: t("views.episodes.all.publisher")}, 
-                           {data: {controller: "slim"}} %>
-            </div>
-            <div class="form-group col-md-6">
-              <%= f.select :authors_id_eq, 
-                           options_from_collection_for_select(@authors, :id, :name, selected: params.dig(:q, :authors_id_eq)), 
-                           {include_blank: t("views.episodes.all.author")}, 
-                           {data: {controller: "slim"}} %>
-            </div>
-            <div class="form-group col-md-6">
-              <%= f.select :book_id_eq, 
-                           options_from_collection_for_select(@books, :id, :name, selected: params.dig(:q, :book_id_eq)), 
-                           {include_blank: t("views.episodes.all.book")}, 
-                           {data: {controller: "slim"}} %>
-            </div>
-          </div>     
+  <div class="row mb-5 mx-4" id="filter">
+    <%= form_with url: all_episodes_path, method: :get, local: true, html: { class: "col-md-12 row" } do |f| %>
+      <div class="col-md-10">
+        <div class="form-group">
+          <%= f.text_field :episode_name, value: params[:episode_name], placeholder: t("views.episodes.all.name"), class: "form-control" %>
         </div>
-        <div class="col-md-4 d-flex justify-content-left align-items-start group-btn">
-          <%= f.submit t("views.episodes.all.btn_filter"), class: "btn btn-primary px-5" %>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <%= f.select :categories_id,
+                          options_from_collection_for_select(@cats, :id, :name, selected: params[:categories_id]),
+                          {include_blank: t("views.episodes.all.cat")},
+                          {data: {controller: "slim"}} %>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <%= f.select :publisher_id,
+                          options_from_collection_for_select(@publishers, :id, :name, selected: params[:publisher_id]),
+                          {include_blank: t("views.episodes.all.publisher")},
+                          {data: {controller: "slim"}} %>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <%= f.select :authors_id,
+                          options_from_collection_for_select(@authors, :id, :name, selected: params[:authors_id]),
+                          {include_blank: t("views.episodes.all.author")},
+                          {data: {controller: "slim"}} %>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <%= f.select :book_id,
+                          options_from_collection_for_select(@books, :id, :name, selected: params[:book_id]),
+                          {include_blank: t("views.episodes.all.book")},
+                          {data: {controller: "slim"}} %>
+            </div>
+          </div>
         </div>
-      <% end %>
-    </div>
+      </div>
+
+      <div class="col-md-2 d-flex justify-content-center align-items-center">
+        <%= f.submit t("views.episodes.all.btn_filter"), class: "btn btn-primary px-5", style: "height: 100%; min-height: 100px;" %>
+      </div>
+    <% end %>
+  </div>
 
     <div class="row trending-box">
       <%= render partial: "episode", collection: @episodes, as: :ep %>
