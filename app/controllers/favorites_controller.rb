@@ -3,17 +3,19 @@ class FavoritesController < ApplicationController
     @favorite_books = current_user
                       .favorites
                       .favorite_books(Settings.models.episode.limit)
+                      .map(&:decorate)
     @favorite_authors = current_user
                         .favorites
                         .favorite_authors(Settings.models.author.limit)
+                        .map(&:decorate)
   end
 
   def books
-    @favorite_books = current_user.favorites.favorite_books
+    @favorite_books = current_user.favorites.favorite_books.map(&:decorate)
   end
 
   def authors
-    @favorite_authors = current_user.favorites.favorite_authors
+    @favorite_authors = current_user.favorites.favorite_authors.map(&:decorate)
   end
 
   def create
